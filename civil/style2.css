@@ -1,0 +1,100 @@
+h1{
+        font-family:fantasy;
+font-stretch: extra-expanded;
+    text-align: center;
+    color:black;
+}
+h3{
+    font-family:cursive;
+    text-align: center;
+    color:coral;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:dimgray;
+  position:sticky;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+    font-size: 17px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color:cadetblue;
+}
+
+.actives {
+  background-color:forestgreen;
+}
+* {box-sizing: border-box;}
+
+.mySlides {display: none;}
+img {vertical-align:middle;}
+footer{
+    text-align: center;
+}
+
+/* Slid
+footer{
+    text-align: center;
+}eshow container */
+.slideshow-container {
+  max-width: 2000px;
+max-height: inherit;
+  position:relative;
+  margin:auto;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name:fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+    text-align: center;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
